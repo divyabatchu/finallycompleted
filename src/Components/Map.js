@@ -125,11 +125,11 @@ class Map extends Component {
         </div>`)
         // document.querySelector('#venuename').focus()
       })
-      })
       .catch((err) => {
         self.state.infoWindow.setContent('Sorry data cannot be loaded :(')
         console.log(err)
       })
+       })
   }
   closeInfoWindow = () => {
     if (this.state.prevMarker) {

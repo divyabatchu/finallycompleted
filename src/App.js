@@ -18,6 +18,7 @@ function App (props) {
             <div className='error-loading'>
               <p className='error-msg'>Couldn't load Google maps</p>
             </div>
+            
           )
         }
       </main>
