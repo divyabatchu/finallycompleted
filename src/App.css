@@ -1,0 +1,132 @@
+:root {
+  --background-color: red;
+  --font-color: #fff;
+}
+
+.App-header {
+  background: var(--background-color);
+  color: var(--font-color);
+  text-align: center;
+  height: 80px;
+  padding: 20px 0 20px 0;
+}
+
+.App-title {
+  font-size: 1.5em;
+  letter-spacing: 2px;
+}
+
+.error-loading {
+  margin-top: 30px;
+  text-align: center;
+  color: var(--font-color);
+}
+
+.error-msg {
+  font-size: 0.8em;
+}
+
+
+#map {
+  position: absolute;
+  top: 80px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: #ccc;
+}
+
+.sidebar {
+  position: absolute;
+  Right: 10px;
+  z-index: 9999;
+  background: #FFE4E1;
+  box-shadow: 2px 3px 4px #ccc;
+  width: 400px;
+}
+
+#search-field {
+  height: 30px;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 1.4em;
+}
+
+.location-list {
+  margin-left: 5px;
+  list-style: none;
+}
+
+.location-item {
+  padding: 5px 0 5px 2px;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.849);
+  cursor: pointer;
+}
+
+.location-item:hover, .location-item:focus {
+  background: #ddd;
+}
+
+.button {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  background: var(--background-color);
+  color: var(--font-color);
+  font-size: 1.2em;
+  transition: opacity 0.5s linear;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.marker-info {
+  padding: 2px;
+  text-align: center;
+}
+
+.marker-info h2, .marker-info p {
+  padding: 2px 0px 2px 0px;
+}
+
+@media screen and (max-width: 420px) {
+  .sidebar {
+    width: 300px;
+  }
+
+  #seach-field {
+    height: 20px;
+    font-size: 1em;
+  }
+  .location-item {
+    padding: 3px 0 3px 1px;
+  }
+}
+
+.label-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.skip-link {
+  position: absolute;
+  top: -1000px;
+  left: 0;
+  z-index: 999999;
+  color: var(--font-color);
+  padding: 3px;
+  font-size: 1.2em;
+  
+
+}
+.skip-link:focus {
+  top: 0;
+}
